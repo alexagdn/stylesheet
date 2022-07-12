@@ -1,0 +1,93 @@
+body {
+    background-color: black;
+    display: block;
+}
+* {
+    margin: 0;
+}
+#navbar {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #b8560b;
+    z-index: 10;
+    top: 0%;
+    margin: 0%;
+
+}
+ul {
+    display: flex;
+    list-style: none;
+    margin-right: 2rem;
+    word-spacing: 1rem;
+}
+li {
+    padding: 2rem;
+}
+a {
+    color: black;
+    font-family: helvetica;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 30% 0 30% 0;
+    
+}
+h1, h2, p {
+    color: #b8560b;
+    line-height: 20px;
+}
+.grid-container {
+    display: grid;
+    width: 100%;
+    padding: 0 5%;
+    grid-template-columns: 50% 50%;
+}
+h1 {
+    font-size: 40px;
+    line-height: 30px;
+    animation-name: front;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+h2 {
+    padding: 30px 0 30px 0;
+    word-spacing: 10px;
+    font-weight: lighter;
+}
+.project-image {
+    width: 700px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-title {
+    padding-top: 3%;
+}
+.project-title:hover {
+    color: lightsalmon;
+}
+button:valid {
+    color:#b8560b;
+}
+button:hover {
+    color:lightsalmon;
+}
+@keyframes front {
+    0% {color: black;}
+    25% {color: black;}
+    50% {color: #b8560b;}
+    100% {color: #b8560b;}
+}
